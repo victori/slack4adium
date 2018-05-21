@@ -1,0 +1,5 @@
+language: objective-c
+xcode_project: skype4adium.xcodeproj
+xcode_scheme: skype4adium
+before_install:
+  - cd adium; make | tail -n 40; cd ..
