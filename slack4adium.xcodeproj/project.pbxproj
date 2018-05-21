@@ -10,6 +10,7 @@
 		55BE7D8620AE5DF50021765A /* PurpleSlackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BE7D8020AE5DF50021765A /* PurpleSlackService.m */; };
 		55BE7D8720AE5DF50021765A /* PurpleSlackAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BE7D8120AE5DF50021765A /* PurpleSlackAccount.m */; };
 		55BE7D8820AE5DF50021765A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55BE7D8420AE5DF50021765A /* Info.plist */; };
+		55D9A80F20B349210021765A /* AISlackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D9A80E20B349200021765A /* AISlackPlugin.m */; };
 		55E9584020AE57C70021765A /* slack-message.c in Sources */ = {isa = PBXBuildFile; fileRef = 55E9580820AE57C60021765A /* slack-message.c */; };
 		55E9584120AE57C70021765A /* json.c in Sources */ = {isa = PBXBuildFile; fileRef = 55E9580C20AE57C60021765A /* json.c */; };
 		55E9584320AE57C70021765A /* slack-rtm.c in Sources */ = {isa = PBXBuildFile; fileRef = 55E9581220AE57C60021765A /* slack-rtm.c */; };
@@ -47,6 +48,7 @@
 		55BE7D8220AE5DF50021765A /* PurpleSlackAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurpleSlackAccount.h; sourceTree = "<group>"; };
 		55BE7D8320AE5DF50021765A /* PurpleSlackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurpleSlackService.h; sourceTree = "<group>"; };
 		55BE7D8420AE5DF50021765A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D9A80E20B349200021765A /* AISlackPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISlackPlugin.m; sourceTree = "<group>"; };
 		55E9580820AE57C60021765A /* slack-message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "slack-message.c"; sourceTree = "<group>"; };
 		55E9580C20AE57C60021765A /* json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = json.c; sourceTree = "<group>"; };
 		55E9580D20AE57C60021765A /* Makefile.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.dep; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				55BE7D7F20AE5DF50021765A /* AISlackPlugin.h */,
+				55D9A80E20B349200021765A /* AISlackPlugin.m */,
 				55BE7D8020AE5DF50021765A /* PurpleSlackService.m */,
 				55BE7D8120AE5DF50021765A /* PurpleSlackAccount.m */,
 				55BE7D8220AE5DF50021765A /* PurpleSlackAccount.h */,
@@ -361,6 +364,7 @@
 				55E9585220AE57C70021765A /* slack-blist.c in Sources */,
 				55E9585320AE57C70021765A /* slack-conversation.c in Sources */,
 				55E9584520AE57C70021765A /* slack.c in Sources */,
+				55D9A80F20B349210021765A /* AISlackPlugin.m in Sources */,
 				55E9584820AE57C70021765A /* slack-cmd.c in Sources */,
 				55BE7D8620AE5DF50021765A /* PurpleSlackService.m in Sources */,
 				55E9584A20AE57C70021765A /* slack-channel.c in Sources */,

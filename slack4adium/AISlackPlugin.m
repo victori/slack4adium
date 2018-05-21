@@ -5,7 +5,7 @@
 //  Copyright © 2018 Victor Igumnov. All rights reserved.
 //
 
-#import "AISkypewebPlugin.h"
+#import "AISlackPlugin.h"
 #import "PurpleSlackService.h"
 #import "slack.h"
 
