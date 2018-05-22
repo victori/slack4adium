@@ -28,7 +28,7 @@
 - (NSString *) serviceID                 { return @"Slack"; }
 - (NSString *) serviceClass              { return @"Slack"; }
 - (NSString *) shortDescription          { return @"Slack"; }
-- (NSString *) longDescription           { return @"Slack Web API"; }
+- (NSString *) longDescription           { return @"Slack API"; }
 - (NSUInteger) allowedLength             { return 64; }
 - (BOOL) requiresPassword                { return YES; }
 - (BOOL) supportsPassword                { return YES; }
@@ -52,18 +52,15 @@
     return [[NSBundle bundleForClass:[self class]] pathForImageResource:@"slack48"];
 }
 
-- (void)registerStatus:(NSString*) status_name ofType:(AIStatusType) status_type
-{
-    [adium.statusController registerStatus:status_name
-                           withDescription:[adium.statusController localizedDescriptionForCoreStatusName:status_name]
-                                    ofType:status_type forService:self];
-}
-
-- (void)registerStatuses {
-    [self registerStatus: STATUS_NAME_AVAILABLE ofType:AIAvailableStatusType];
-    [self registerStatus: STATUS_NAME_AWAY      ofType:AIAwayStatusType];
-    [self registerStatus: STATUS_NAME_BUSY      ofType:AIAwayStatusType];
-    [self registerStatus: STATUS_NAME_OFFLINE   ofType:AIOfflineStatusType];
+- (void) registerStatuses {
+#define ADDSTATUS(name, type) \
+[adium.statusController registerStatus:name \
+withDescription:[adium.statusController localizedDescriptionForCoreStatusName:name] \
+ofType:type forService:self]
+    
+    ADDSTATUS(STATUS_NAME_AVAILABLE, AIAvailableStatusType);
+    ADDSTATUS(STATUS_NAME_AWAY, AIAwayStatusType);
+    ADDSTATUS(STATUS_NAME_OFFLINE, AIOfflineStatusType);
 }
 
 @end

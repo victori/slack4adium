@@ -12,7 +12,7 @@
 
 - (const char*)protocolPlugin
 {
-    return "prpl-slackweb";
+    return "prpl-slack";
 }
 
 - (NSString *)host
@@ -20,7 +20,7 @@
     return @"slack.com";
 }
 
-/*
+
 - (const char *)purpleStatusIDForStatus:(AIStatus *)statusState
                               arguments:(NSMutableDictionary *)arguments
 {
@@ -28,22 +28,17 @@
     
     switch (statusState.statusType) {
         case AIAvailableStatusType:
-            statusID = "Online";
+            statusID = "active";
             break;
         case AIAwayStatusType:
-            statusID = "Away";
+            statusID = "away";
             break;
-            
-        case AIInvisibleStatusType:
-            statusID = "Hidden";
-            break;
-            
         case AIOfflineStatusType:
-            statusID = "Offline";
+            statusID = "offline";
             break;
     }
     
     return statusID;
-}*/
+}
 
 @end
