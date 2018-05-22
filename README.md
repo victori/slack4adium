@@ -15,15 +15,10 @@ Thanks
 
 ### How to build yourself
 
-1. Checkout this git repository and init submodules
+1. Checkout this git repository
 
    `git clone https://github.com/victori/slack4adium.git`
-   `git submodule update --init`
 
-2. Compile Adium:
+2. Compile the Adium plugin:
 
-   `cd adium; make`
-
-3. Compile the plugin:
-
-   `xcodebuild -configuration Release -project "slack4adium.xcodeproj"`
+   `make`
