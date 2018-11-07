@@ -1,6 +1,3 @@
 [submodule "adium"]
 	path = adium
 	url = https://github.com/adium/adium.git
-[submodule "slack-libpurple"]
-	path = slack-libpurple
-	url = https://github.com/dylex/slack-libpurple.git
