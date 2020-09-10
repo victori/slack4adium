@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		558335882509BD8D00B65A80 /* slack-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 558335862509BD8C00B65A80 /* slack-auth.c */; };
 		55BE7D8620AE5DF50021765A /* PurpleSlackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BE7D8020AE5DF50021765A /* PurpleSlackService.m */; };
 		55BE7D8720AE5DF50021765A /* PurpleSlackAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BE7D8120AE5DF50021765A /* PurpleSlackAccount.m */; };
 		55BE7D8820AE5DF50021765A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55BE7D8420AE5DF50021765A /* Info.plist */; };
@@ -42,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		558335862509BD8C00B65A80 /* slack-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "slack-auth.c"; sourceTree = "<group>"; };
+		558335872509BD8C00B65A80 /* slack-auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "slack-auth.h"; sourceTree = "<group>"; };
 		55BE7D7F20AE5DF50021765A /* AISlackPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISlackPlugin.h; sourceTree = "<group>"; };
 		55BE7D8020AE5DF50021765A /* PurpleSlackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleSlackService.m; sourceTree = "<group>"; };
 		55BE7D8120AE5DF50021765A /* PurpleSlackAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleSlackAccount.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				55E9581320AE57C60021765A /* json-parser */,
 				55E9581420AE57C60021765A /* slack-object.c */,
 				55E9581520AE57C60021765A /* slack.c */,
+				558335862509BD8C00B65A80 /* slack-auth.c */,
+				558335872509BD8C00B65A80 /* slack-auth.h */,
 				55E9581620AE57C60021765A /* slack-conversation.h */,
 				55E9581720AE57C60021765A /* slack-blist.h */,
 				55E9581820AE57C60021765A /* slack-api.c */,
@@ -283,6 +288,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CDEC6DC11AED672300E6E652;
@@ -359,6 +365,7 @@
 			files = (
 				55BE7D8720AE5DF50021765A /* PurpleSlackAccount.m in Sources */,
 				55E9585720AE57C70021765A /* slack-im.c in Sources */,
+				558335882509BD8D00B65A80 /* slack-auth.c in Sources */,
 				55E9584020AE57C70021765A /* slack-message.c in Sources */,
 				55E9584620AE57C70021765A /* slack-api.c in Sources */,
 				55E9585220AE57C70021765A /* slack-blist.c in Sources */,
@@ -414,7 +421,7 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/build/Debug",
 					"$(PROJECT_DIR)/adium/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -442,6 +449,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -479,7 +487,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/build/Debug",
 					"$(PROJECT_DIR)/adium/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -499,6 +507,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
