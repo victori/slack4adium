@@ -22,3 +22,9 @@ Thanks
 2. Compile the Adium plugin:
 
    `make`
+
+### Authentication
+
+Set `username` to `user@example.com%<workspace>.slack.com`.
+
+And your slack password as your password.
